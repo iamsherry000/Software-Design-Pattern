@@ -4,7 +4,7 @@ class Player {
     }
   
     nameHimself() {
-      console.log("Player " + this.name + " names himself.");
+      console.log("Player " + this.name + " named himself.");
     }
   }
   
