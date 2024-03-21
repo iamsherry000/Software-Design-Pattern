@@ -3,7 +3,6 @@ const Player = require('./Player');
 class AIPlayer extends Player {
     constructor(name) {
         super(name || `AI Player ${AIPlayer.playerCount}`);
-        AIPlayer.playerCount++;
     }
 
     nameHimself() {

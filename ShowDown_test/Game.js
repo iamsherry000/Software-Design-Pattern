@@ -14,13 +14,13 @@ class Game{
 
     addPlayers(numOfHuman, numOfAI){
         console.log("line#16");
-        for(let i = 0 ; i < numOfHuman; i++){
-            console.log("line#18");
-            const humanPlayer = new HumanPlayer;
-            humanPlayer.nameHimself();
-            this.players.push(humanPlayer);
-            console.log("human player: " + humanPlayer)
-        }
+        // for(let i = 0 ; i < numOfHuman; i++){
+        //     console.log("line#18");
+        //     //const humanPlayer = new HumanPlayer();
+        //     humanPlayer.nameHimself();
+        //     this.players.push(humanPlayer);
+        //     console.log("human player: " + humanPlayer)
+        // }
         for (let i = 0; i < numOfAI; i++) {
             const aiPlayer = new AIPlayer();
             aiPlayer.nameHimself();
