@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "ShowDown_Java.Main",
+            "projectName": "Software-Design-Pattern_a6131325"
+        },
+        {
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
