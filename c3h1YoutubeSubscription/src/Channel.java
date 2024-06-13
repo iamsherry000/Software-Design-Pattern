@@ -14,11 +14,11 @@ public class Channel {
         return name;
     }
 
-    public void attach(Observer observer) {
+    public void subscribe(Observer observer) {
         subscribers.add(observer);
     }
 
-    public void detach(Observer observer) {
+    public void unsubscribe(Observer observer) {
         subscribers.remove(observer);
     }
 
@@ -28,9 +28,7 @@ public class Channel {
         }
     }
 
-    public void uploadVideo(String title, String description, int length) {
-        Video video = new Video(name, length);
-        System.out.println(name + " upload a new video " + video.getName());
+    public void uploadVideo(Video video) {
         notifyObservers(video);
     }
 

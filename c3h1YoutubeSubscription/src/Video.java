@@ -1,16 +1,16 @@
 public class Video {
-    private String name;
+    private String title;
     private String description;
     private int length;
 
-    public Video(String name, int length) {
-        this.name = name;
+    public Video(String title, String description, int length) {
+        this.title = title;
         this.description = description;
         this.length = length;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {

@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subscriber implements Observer {
+public class Subscriber1 implements Observer{
     private String name;
     private List<Channel> subscribedChannels;
 
-    public Subscriber(String name) {
+    public Subscriber1(String name) {
         this.name = name;
         this.subscribedChannels = new ArrayList<>();
     }
@@ -28,8 +28,8 @@ public class Subscriber implements Observer {
 
     @Override
     public void update(Video video) {
-        if (video.getLength() >= 180) {
-            System.out.println(name + " liked the video: " + video.getTitle());
+        if (video.getLength() <= 60) {
+            //unsubscribeChannel(video.getChannel());
         }
     }
 }
